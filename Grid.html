@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-Layout</title>
+    <style>
+        .Grid-container{
+            background-color:beige;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(4,120px);
+            /* grid-template-areas: 
+            'header header header'
+            'sidebar content-1 content-1'
+            'sidebar content-2 content-3'
+            'footer footer footer'; */
+            gap:10px;
+        }
+        .Grid-container > div{
+            text-align: center;
+            padding: 50px;
+        }
+       .Grid-Item-1 {
+        border: 2px black solid;
+        background-color:rgb(245, 180, 94) ;
+        /* grid-area: header; */
+        grid-column-start: 1;
+        grid-column-end: 4;
+       }
+       .Grid-Item-2{
+        border:2px solid black;
+        background-color:cadetblue;
+        /* grid-area: content-1; */
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end:3;
+       }
+       .Grid-Item-3{
+        border:2px solid black;
+        background-color:darksalmon;
+        /* grid-area: content-2; */
+        grid-column-start: 2;
+        grid-column-end:3;
+        grid-row-start: 3;
+        grid-row-end:4;
+       }
+       .Grid-Item-4{
+        border:2px solid black;
+        background-color: hotpink;
+        /* grid-area: content-3; */
+        grid-column-start:3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end:4;
+       }
+       .Grid-Item-5{
+        border:2px solid black;
+        background-color:orchid;
+        /* grid-area: sidebar; */
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end:4;
+       }
+       .Grid-Item-6{
+        border:2px solid black;
+        background-color:yellowgreen;
+        /* grid-area:Footer; */
+        grid-column-start: 1;
+        grid-column-end: 4;
+       }
+    </style>
+</head>
+<body>
+    <div class="Grid-container">
+        <div class="Grid-Item-1">HEADER</div>
+        <div class="Grid-Item-2">CONTENT-1</div>
+        <div class="Grid-Item-3">CONTENT-2</div>
+        <div class="Grid-Item-4">CONTENT-3</div>
+        <div class="Grid-Item-5">SIDEBAR</div>
+        <div class="Grid-Item-6">FOOTER</div>
+    </div>
+    
+</body>
+</html>

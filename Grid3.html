@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid task 1</title>
+    <style>
+        .grid_container{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(4,100px);
+            gap: 10px;
+            color: white;
+            font-size: 2rem;
+            text-align: center;
+        }
+        .item1{
+            background-color: aqua;
+            grid-column-start:1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .item2{
+            background-color: burlywood;
+            grid-column-start:2;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .item3{
+            background-color: brown;
+            grid-column-start:4;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end:5;
+        }
+        .item4{
+            background-color:blue;
+            grid-column-start:5;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .item5{
+            background-color:darkgreen;
+            grid-column-start:1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        .item6{
+            background-color:gold;
+            grid-column-start:5;
+            grid-column-end: 6;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        .item7{
+            background-color:black;
+            grid-column-start:1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        .item8{
+            background-color:darkseagreen;
+            grid-column-start:2;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        .item9{
+            background-color: darkorange;
+            grid-column-start:3;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        .item10{
+            background-color:indianred;
+            grid-column-start:5;
+            grid-column-end:6;
+            grid-row-start:3;
+            grid-row-end: 4;
+        }
+        .item11{
+            background-color:deepskyblue;
+            grid-column-start:1;
+            grid-column-end: 4;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+        .item12{
+            background-color:fuchsia;
+            grid-column-start:5;
+            grid-column-end: 6;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid_container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">Css Grid Layout</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+        <div class="item10">10</div>
+        <div class="item11">11</div>
+        <div class="item12">12</div>
+
+    </div>
+</body>
+</html>
